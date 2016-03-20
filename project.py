@@ -9,7 +9,7 @@ departure_day = raw_input ("Departure day (yyyy-mm-day) ")
 adult_passengers = raw_input ("How many adults are traveling? ")
 
 
-url = "https://www.googleapis.com/qpxExpress/v1/trips/search?key=AIzaSyDactDzfEYQuhLWXXbCm85A4GkVsrXopDQ"
+url = "https://www.googleapis.com/qpxExpress/v1/trips/search?key=AIzaSyCA9UXD4NP9oAOkA4I0WyHmoC-Q2HFCXyU"
 code = {
   "request": {
     "passengers": {
@@ -36,7 +36,6 @@ flight = urllib2.urlopen(req)
 response = flight.read()
 flight.close()
 # print(response)
-
 
 FareFlights = json.loads(response) #turns json into a dictionary
 
